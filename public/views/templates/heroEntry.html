@@ -1,0 +1,17 @@
+<form class="col-md-12">
+    <div class="row">
+        <label for="alias">Alias: </label>
+        <input type="text" ng-model="alias" id="alias" />
+        <label for="firstName">First: </label>
+        <input type="text" ng-model="firstName" id="firstName" />
+        <label for="lastName">Last Name: </label>
+        <input type="text" ng-model="LastName" id="lastName" />
+        <label for="city"> City: </label>
+        <input type="text" ng-model="city" id="city" />
+        <span>Choose Power:</span>
+        <select ng-model="powerType" ng-options="power as power.label in powerName track by power.type">
+        </select>
+    </div>
+
+    <button class="btn btn-info" ng-click="addHero()">Add Hero</button>
+</form>
